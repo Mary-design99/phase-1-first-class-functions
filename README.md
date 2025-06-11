@@ -18,6 +18,9 @@ depending on the day — we might lift weights, go for a swim, or run an extra 5
 miles.
 
 In programming-speak, we could write out a function for every day (follow along
+
+  - take a _callback function_ as an argument
+  - call the callback function
 by writing out these examples in a REPL, or in the `index.js` file!):
 
 ```js
@@ -52,6 +55,9 @@ help us _reduce_ this kind of repetition.
 
 What if we pull all of our five-mile runs into their own function?
 
+  - take a _callback function_ as an argument
+  - call the callback function
+
 ```js
 function runFiveMiles() {
   console.log("Go for a five-mile run");
@@ -69,6 +75,12 @@ function liftWeights() {
 function swimFortyLaps() {
   console.log("Swim 40 laps");
 }
+
+  - take a _callback function_ as an argument
+  - call the callback function
+
+  - take a _callback function_ as an argument
+  - call the callback function
 ```
 
 Awesome! We've cut down a little bit more: `Monday()` could now look like:
@@ -141,6 +153,9 @@ exerciseRoutine(function () {
   console.log("Stretch! Work that core!");
 });
 
+  - take a _callback function_ as an argument
+  - call the callback function
+
 // "Go for a five-mile run"
 // "Stretch! Work that core!"
 ```
@@ -151,6 +166,9 @@ We can rewrite this to be more concise by using an arrow function:
 exerciseRoutine(() => {
   console.log("Stretch! Work that core!");
 });
+
+  - take a _callback function_ as an argument
+  - call the callback function
 
 // Or even shorter:
 exerciseRoutine(() => console.log("Stretch! Work that core!"));
